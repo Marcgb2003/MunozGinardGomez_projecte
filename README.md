@@ -29,4 +29,4 @@ Tenemos  un showcase de los servicios que ofrecemos junto con una imagen que mue
 
 Actualmente, esta web es un prototipo en desarrollo. La información y los textos presentes no están completos y pueden estar sujetos a cambios.
 
-En el futuro, al pulsar sobre la foto de una guitarra, se redirigirá directamente a la página de producto correspondiente, funcionalidad que será implementada próximamente. Actualmente todas las fotografías son un placeholder genérico 
+En el futuro, al pulsar sobre la foto de una guitarra, se redirigirá directamente a la página de producto correspondiente, funcionalidad que será implementada próximamente. Actualmente todas las fotografías que no son los modelos de guitarra son un placeholder genérico que se sustituira en cuanto tengamos el logo.
