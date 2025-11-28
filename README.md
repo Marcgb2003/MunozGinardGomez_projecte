@@ -1,4 +1,5 @@
 # MUMEZ GUITARS
+#### Por Marc Gomez Barceló, Ruben Muñoz y Sergi Ginard
 #### Nuestro proyecto consiste en una página web de venta de guitarras personalizadas, dado que eso posibilitará y justificará que usemos formularios y javascript. Está inspirada en la web de Sabrafen, un luthier español y tenemos planeadi implementar diversos modelos de guitarra.
 
 ## Diseño de la web
