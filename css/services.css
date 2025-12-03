@@ -1,0 +1,65 @@
+/* SERVICES */
+.services {
+  display: flex;
+  gap: 2vw;
+  padding: 3vw 2vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  display: flex;
+  gap: 1vw;
+  align-items: flex-start;
+  flex: 1 1 30vw;
+  min-width: 25vw;
+}
+
+.service img {
+  width: 15vw;
+  max-width: 15vw;
+  height: auto;
+  border-radius: 0.5vw;
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-info h3 {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  margin-bottom: 0.5vw;
+}
+
+.service-info p {
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  line-height: 1.5;
+}
+
+/* Mobile phones */
+@media (max-width: 720px) {
+  .product-showcase {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .service img {
+    width: 50vw;
+    max-width: 60vw;
+    margin-bottom: 1vw;
+  }
+
+  
+}
