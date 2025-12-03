@@ -1,4 +1,4 @@
-header {
+nav {
   overflow: hidden;
   background-color: #3a3a3a;
   position: sticky;
@@ -8,7 +8,7 @@ header {
   padding: 5px;
 }
 
-header button {
+nav button {
   background-color: rgb(244, 144, 22);
   border-radius: 5%;
   flex: 1; /* botons espai igual */
