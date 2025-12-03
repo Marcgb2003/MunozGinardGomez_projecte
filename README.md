@@ -36,4 +36,12 @@ En el futuro, al pulsar sobre la foto de una guitarra, se redirigirá directamen
 
 ### Diseño visual
 
-Hemos seguido un diseño sencillo, donde las fotografías sean lo principal y muy inspirado en la pagina web de Sabrafen, donde los diferentes blogs de información queden bien marcados y diferenciados. Queremos que la web sea accesible visualmente y que 
+Hemos seguido un diseño sencillo, donde las fotografías sean lo principal y muy inspirado en la pagina web de Sabrafen, donde los diferentes blogs de información queden bien marcados y diferenciados. Queremos que la web sea accesible visualmente y que sea vendible, por lo que hemos usado Arial, sans-serif de tamaño 1rem y queremos que todo se diferencie bien. También hemos añadido que en la página de productos tengas un carrusel de imágenes y así puedas scrollear entre ellas.
+
+### Responsiveness
+
+Hemos diseñado esta web de manera que se autoajusten los layouts para que quepan en cualquier dispositivo, como se puede comprobar en nuestro navbar en cualquier página, nuestra página principal o, más visualmente, en nuestra página products, donde puedes ver que, según el tamaño, las guitarras se reordenan.
+
+### Reparto de tareas
+
+En esta parte nuestras tareas se han diferenciado, encargándose Ruben del responsiveness general y las decisiones visuales, Marc del mantenimiento y la cohesión del HTML con los cambios y el añadido de detalles para seguir con el diseño en todos los CSS y Sergi se ha encargado de crear el carrusel
