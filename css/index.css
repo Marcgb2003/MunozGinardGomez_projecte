@@ -105,13 +105,5 @@
     margin-bottom: 1vw;
   }
 
-  .footer {
-    flex-direction: column;
-    gap: 3vw;
-    font-size: 1.5vw;
-  }
-
-  .footer-section {
-    min-width: 100%;
-  }
+  
 }
