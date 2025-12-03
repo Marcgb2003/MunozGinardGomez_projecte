@@ -10,15 +10,21 @@
     />
     <title>My Webpage</title>
     <!-- Link to CSS file (optional) -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <img src="imgs/placeholder.jpg" alt="logo" />
-      <a href="index.html">Inicio</a>
-      <a href="aboutus.html">Sobre nosotros</a>
-      <a href="services.html">Servicios</a>
-      <a href="products.html">Productos</a>
+     <nav class="topbar">
+      <article class="logo">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="Logo" />
+        </a>
+      </article>
+      <article class="nav-links">
+        <a href="index.html" class="navbutton">Inicio</a>
+        <a href="aboutus.html" class="navbutton">Nosotros</a>
+        <a href="services.html" class="navbutton">Servicios</a>
+        <a href="products.html" class="navbutton">Productos</a>
+      </article>
     </nav>
     <main>
       <h2>MUMEZ: NUESTRO PROYECTO</h2>
@@ -36,18 +42,21 @@
       </ul>
       <p>Cita requerida para poder realizar un diseño</p>
     </article>
-    <footer>
-      <h4>Socials</h4>
-      <a href="youtube.com" target="_blank">Youtube</a>
-      <a href="instagram.com" target="_blank">Instagram</a>
-      <a href="facebook.com" target="_blank">FaceBook</a>
-      <a href="x.com">X</a>
-      <h4>Contact</h4>
-      <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuesro correo</a>
-      <p>Telefono: 601126557</p>
-      <h4>Dirección</h4>
-      <p>C/ Company 19</p>
-      <img src="imgs/placeholder.jpg" alt="logo" />
-    </footer>
+    <footer class="footer">
+      <article class="footer-section">
+        <h4>Les nostres Socials</h4>
+        <a href="youtube.com" target="_blank">Youtube</a>
+        <a href="instagram.com" target="_blank">Instagram</a>
+        <a href="facebook.com" target="_blank">FaceBook</a>
+        <a href="x.com" target="_blank">X</a>
+      </article>
+
+      <article class="footer-section">
+        <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuestro correo</a>
+        <p>Telefono: 601126557</p>
+        <h4>Dirección</h4>
+        <p>C/ Company 19</p>
+      </article>
+      </footer>
   </body>
 </html>

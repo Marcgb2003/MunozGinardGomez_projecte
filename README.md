@@ -2,7 +2,7 @@
 #### Por Marc Gomez Barceló, Ruben Muñoz y Sergi Ginard
 #### Nuestro proyecto consiste en una página web de venta de guitarras personalizadas, dado que eso posibilitará y justificará que usemos formularios y javascript. Está inspirada en la web de Sabrafen, un luthier español y tenemos planeadi implementar diversos modelos de guitarra.
 
-## Diseño de la web
+## Diseño HTML de la web
 
 Todas las páginas comparten el mismo header y footer para mantener coherencia visual y facilidad de navegación.
 
@@ -31,3 +31,9 @@ Tenemos  un showcase de los servicios que ofrecemos junto con una imagen que mue
 Actualmente, esta web es un prototipo en desarrollo. La información y los textos presentes no están completos y pueden estar sujetos a cambios.
 
 En el futuro, al pulsar sobre la foto de una guitarra, se redirigirá directamente a la página de producto correspondiente, funcionalidad que será implementada próximamente. Actualmente todas las fotografías que no son los modelos de guitarra son un placeholder genérico que se sustituira en cuanto tengamos el logo.
+
+## Diseño CSS de la web
+
+### Diseño visual
+
+Hemos seguido un diseño sencillo, donde las fotografías sean lo principal y muy inspirado en la pagina web de Sabrafen, donde los diferentes blogs de información queden bien marcados y diferenciados. Queremos que la web sea accesible visualmente y que 

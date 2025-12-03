@@ -13,6 +13,155 @@ header button {
   border-radius: 5%;
   flex: 1; /* botons espai igual */
   margin: 0;
-  padding: 15px 0;a
+  padding: 15px 0;
   text-align: center;
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* NAVBAR */
+.topbar {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  background-color: rgb(43, 43, 43);
+  padding: 1vw 2vw;
+}
+
+.logo {
+  flex: 1; 
+  max-width: 33%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.nav-links {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.navbutton {
+  flex: 1;
+  background-color: rgb(136, 136, 136);
+  border-radius: 0.5vw;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  color: white;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3vw;
+  padding: 3vw 2vw;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+}
+
+.footer-section {
+  flex: 1 1 20vw;
+  min-width: 25vw;
+}
+
+.footer-section h4 {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  margin-bottom: 1vw;
+}
+
+.footer-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5vw;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: rgb(180, 180, 180);
+}
+
+/* RESPONSIVE per movils Asist de CHATGPT */
+
+/* Tablet / small desktop */
+@media (max-width: 810px) {
+  .topbar {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 1vw;
+  }
+
+  .nav-links {
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .services {
+    flex-direction: column;
+    gap: 3vw;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .product-showcase {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .service img {
+    width: 50vw;
+    max-width: 60vw;
+    margin-bottom: 1vw;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 3vw;
+    font-size: 1.5vw;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
 }

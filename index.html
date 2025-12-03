@@ -10,84 +10,103 @@
     />
     <title>My Webpage</title>
     <!-- Link to CSS file (optional) -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <button><img src="imgs/placeholder.jpg" alt="logo" /></button>
-      <button><a href="index.html">Inicio</a></button>
-      <button><a href="aboutus.html">Sobre nosotros</a></button>
-      <button><a href="services.html">Servicios</a></button>
-      <button><a href="products.html">Productos</a></button>
+        <nav class="topbar">
+      <article class="logo">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="Logo" />
+        </a>
+      </article>
+      <article class="nav-links">
+        <a href="index.html" class="navbutton">Inicio</a>
+        <a href="aboutus.html" class="navbutton">Nosotros</a>
+        <a href="services.html" class="navbutton">Servicios</a>
+        <a href="products.html" class="navbutton">Productos</a>
+      </article>
     </nav>
     <main>
     <article id="guitarShowcase">
-      <a href="product.html">
-        <img src="imgs/Amapola.png" alt="Amapola" />
+          <section class="product-showcase">
+      <a href="product.html" class="product">
+        <img src="imgs/Amapola.png" alt="Producto 1" />
         <figcaption>Amapola</figcaption>
       </a>
-      <a href="product.html">
-        <img src="imgs/Paola.jpg" alt="Paola" />
+      <a href="product.html" class="product">
+        <img src="imgs/Paola.jpg" alt="Producto 2" />
         <figcaption>Paola</figcaption>
       </a>
-      <a href="product.html">
-        <img src="imgs/Chenoa.jpg" alt="Chenoa" />
-        <figcaption>Chenoa</figcaption></a
-      >
-      <a href="product.html">
-        <img src="imgs/Aroha.jpg" alt="Aroha" />
+      <a href="product.html" class="product">
+        <img src="imgs/Chenoa.jpg" alt="Producto 3" />
+        <figcaption>Chenoa</figcaption>
+      </a>
+      <a href="product.html" class="product">
+        <img src="imgs/Aroha.jpg" alt="Producto 4" />
         <figcaption>Aroha</figcaption>
       </a>
-    </article id="description">
-      <h3>Nuestro Proyecto</h3>
+    </section>
+    <section class="about-us">
+      <a href="aboutus.html" class="about-title">
+        <h2>Sobre Nosotros</h2>
+      </a>
       <p>
         Hola, somos Ruben Muñoz y Marc Gómez, 2 nombres incipientes en el mundo
         de la lutheria de Mallorca, especializados en diseños tradicionales y
         versátiles que <a href="aboutus.html">...</a>
       </p>
       <h3>Tú lo sueñas, nosotros lo hacemos y tú lo tocas</h3>
-    <article id="services">
-      <img src="imgs/placeholder.jpg" alt="Logo Mantenimiento" />
-      <figcaption>
-        <h4>Mantenimiento</h4>
-        <p>
-          Te proporcionamos mantenimiento a tus guitarras, cuidándolas por una
+     </section>
+
+
+<section class="services">
+      <article class="service">
+        <img src="imgs/placeholder.jpg" alt="Servicio 1">
+        <article class="service-info">
+          <a href="services.html"><h3>Mantenimiento</h3></a>
+          <p>Te proporcionamos mantenimiento a tus guitarras, cuidándolas por una
           tarifa base de 100€ al año por 3 revisiones, una cada 4 meses o por
           una tarifa base de 120€ en la que te incluimos 4 revisiones, una cada
-          3 meses.
-        </p>
-      </figcaption>
-      <img src="imgs/placeholder.jpg" alt="Logo Creación" />
-      <figcaption>
-        <h4>Creación</h4>
-        <p>
-          Puedes solicitar que te construyamos cualquiera de nuestros modelos
-          más emblemáticos sin cargo extra si no está en stock.
-        </p>
-      </figcaption>
-      <img src="imgs/placeholder.jpg" alt="Logo Diseño" />
-      <figcaption>
-        <h4>Diseño</h4>
-        <p>
-          ¿Ninguna de nuestras guitarras te convence? Te ofrecemos un servicio
+          3 meses.</p>
+        </article>
+      </article>
+
+      <article class="service">
+        <img src="imgs/placeholder.jpg" alt="Servicio 2">
+        <article class="service-info">
+          <a href="services.html"><h3>Creación</h3></a>
+          <p>Puedes solicitar que te construyamos cualquiera de nuestros modelos
+          más emblemáticos sin cargo extra si no está en stock.</p>
+        </article>
+      </article>
+
+      <article class="service">
+        <img src="imgs/placeholder.jpg" alt="Servicio 3">
+        <article class="service-info">
+          <a href="services.html"><h3>Diseño</h3></a>
+          <p>¿Ninguna de nuestras guitarras te convence? Te ofrecemos un servicio
           de diseño para modificar las espeificaciones de nuestras guitarras,
-          desde las pastillas y la electrónica hasta la forma del mástil.
-        </p>
-      </figcaption>
-    </article>
+          desde las pastillas y la electrónica hasta la forma del mástil.</p>
+        </article>
+      </article>
+    </section>
     </main>
-    <footer>
-      <h4>Socials</h4>
-      <a href="youtube.com">Youtube</a>
-      <a href="instagram.com">Instagram</a>
-      <a href="facebook.com">FaceBook</a>
-      <a href="x.com">X</a>
-      <h4>Contact</h4>
-      <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuesro correo</a>
-      <p>Telefono: 601126557</p>
-      <h4>Dirección</h4>
-      <p>C/ Company 19</p>
-      <img src="imgs/placeholder.jpg" alt="logo" />
-    </footer>
+    <footer class="footer">
+      <article class="footer-section">
+        <h4>Les nostres Socials</h4>
+        <a href="youtube.com" target="_blank">Youtube</a>
+        <a href="instagram.com" target="_blank">Instagram</a>
+        <a href="facebook.com" target="_blank">FaceBook</a>
+        <a href="x.com" target="_blank">X</a>
+      </article>
+
+      <article class="footer-section">
+        <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuestro correo</a>
+        <p>Telefono: 601126557</p>
+        <h4>Dirección</h4>
+        <p>C/ Company 19</p>
+      </article>
+      </footer>
   </body>
 </html>
