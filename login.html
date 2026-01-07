@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -10,13 +8,13 @@
       name="description"
       content="Mumez, unos luthiers especializados en complacerte."
     />
-    <title>Sobre nosotros</title>
+    <title>Mumez guitars</title>
     <!-- Link to CSS file (optional) -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="topbar">
+        <nav class="topbar">
       <article class="logo">
         <a href="index.html">
           <img src="imgs/logo.png" alt="Logo" />
@@ -28,51 +26,23 @@
         <a href="services.html" class="navbutton">Servicios</a>
         <a href="products.html" class="navbutton">Productos</a>
       </article>
-       <article class="logo">
+       <article class="login">
         <a href="login.html">
           <!--Gotta add the login icon-->
           <img src="imgs/placeholder.png" alt="Logo" />
         </a>
       </article>
     </nav>
-    
-    
+
     <main>
-<section class="services">
-      <article class="service">
-        <img src="imgs/placeholder.jpg" alt="Servicio 1">
-        <article class="service-info">
-          <h3>Mantenimiento</h3></a>
-          <p>Te proporcionamos mantenimiento a tus guitarras, cuidándolas por una
-          tarifa base de 100€ al año por 3 revisiones, una cada 4 meses o por
-          una tarifa base de 120€ en la que te incluimos 4 revisiones, una cada
-          3 meses.</p>
-        </article>
-      </article>
-
-      <article class="service">
-        <img src="imgs/placeholder.jpg" alt="Servicio 2">
-        <article class="service-info">
-          <h3>Creación</h3></a>
-          <p>Puedes solicitar que te construyamos cualquiera de nuestros modelos
-          más emblemáticos sin cargo extra si no está en stock.</p>
-        </article>
-      </article>
-
-      <article class="service">
-        <img src="imgs/placeholder.jpg" alt="Servicio 3">
-        <article class="service-info">
-          <h3>Diseño</h3></a>
-          <p>¿Ninguna de nuestras guitarras te convence? Te ofrecemos un servicio
-          de diseño para modificar las espeificaciones de nuestras guitarras,
-          desde las pastillas y la electrónica hasta la forma del mástil.</p>
-        </article>
-      </article>
-    </section>
+    <form action="" method="post">
+        <label for="username">Nom d'usuari:</label>
+        <input id="username" type="text" name = "Nom d'usuari" pattern="^[A-Za-z0-9_\-]{4,15}$">
+                <label for="password">Contrassenya:</label>
+        <input id="password" type="password" name = "Contrassenya" pattern="^(?=.*[_\-.:,;!·$%&/()=\?¿\\|@#~])[A-Za-z0-9^A-Za-z0-9]{4,30}$">
+        <button type="submit">Iniciar sessió</button>
+    </form>
     </main>
-    </main>
-
-
 
     <footer class="footer">
       <article class="footer-section">
