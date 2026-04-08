@@ -45,3 +45,21 @@ Hemos diseñado esta web de manera que se autoajusten los layouts para que quepa
 ### Reparto de tareas
 
 En esta parte nuestras tareas se han diferenciado, encargándose Ruben del responsiveness general y las decisiones visuales, Marc del mantenimiento y la cohesión del HTML con los cambios y el añadido de detalles para seguir con el diseño en todos los CSS y Sergi se ha encargado de crear el carrusel
+
+## Diseño de formularios
+
+### Diseño base
+
+Hemos implementado una página de login a la cual se puede acceder desde cualquier otra página y que te pedirá el usuario y la contraseña y, cuando tengamos uso de Javascript y base de datos, te permitirá iniciar sesión.
+
+A su vez hemos implementado una sección de mensaje directo en el about us donde le pedimos el nombre completo, la dirección de correo y el mensaje que desea enviar, lo cual será reenviado directamente a mi correo.
+
+### Las verificaciones
+
+En login tenemos los siguentes requisitos para el usuario: que acepte todas las letras tanto en mayúscula como en minúscula, todos los números, "-" y "\_" y que la contraseña tenga entre 4 y 30 caracteres, que incluya alguno de los siguientes caracteres: "\_-.:,;!"·$%&/()=?¿\|@#~" a parte de las letras tanto en mayúsculas como en minúsculas y los números.
+
+En el mensaje hemos puesto que, como tiene que ser un nombre completo, tiene que incluir mínimo un espacio y que solo pueda tener letras tanto en mayúculas como en minúsculas y que el correo tenga una parte local que solo incluya letras, números y ".", un "@", la parte de dominio tenga los mismo requisitos que la parte local con el añadido de que puede contener un "-" y por último, separado por un ".", debe tener el tramo de dominio que solo pueden ser letras y debe tener como mínimo 2 caracteres.
+
+### Reparto de tareas
+
+Marc se ha encargado del HTML, mientras que Rúben ha puesto sus habilidades con el CSS y el diseño a buen uso y Sergi ha explicado el trabajo anteriormente mencionado en el README y ha ayudado en las decisiones de seguridad.

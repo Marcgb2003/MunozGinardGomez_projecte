@@ -58,6 +58,12 @@ body {
   background-color: rgb(180, 180, 180);
   color: black;
 }
+
+.navbutton img.login {
+  width: 3em;
+  height: auto;
+}
+
 /* FOOTER */
 .footer {
   display: flex;
