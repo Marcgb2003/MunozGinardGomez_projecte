@@ -49,34 +49,39 @@
       <p>Esta descripción es un placeholder usado para que, en cuanto tengamos las guitarras diseñadas y preparadas para ponerlas, se sustituya. Lorem Ipsum Dolor sic amet, nucoare traendam hurale hispena. </br> La tguitara es yada yada yada necesito madera, estoy en un prototipo hasta que tengamos el diseño</p>
       </article>
       <article class="guitarSpecs">
-      <h3>Tabla de especificaciones</h3>
-      <table>
-        <tr>
-          <td>Madera del mástil</td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>Madera del cuerpo</td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>Pastillas</td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>Electrónica</td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>Puente</td>
-          <td>NA</td>
-        </tr>
-        <tr>
-          <td>Escala</td>
-          <td>NA</td>
-        </tr>
-      </table>
-      </article>
+  <h3>
+    Tabla de especificaciones
+    <button id="toggleSpecs" onclick="toggleTable()" aria-expanded="true" aria-controls="specsTable">
+      ▲
+    </button>
+  </h3>
+  <table id="specsTable">
+    <tr>
+      <td>Madera del mástil</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Madera del cuerpo</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Pastillas</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Electrónica</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Puente</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Escala</td>
+      <td>NA</td>
+    </tr>
+  </table>
+</article>
     </main>
     <footer class="footer">
       <article class="footer-section">
@@ -94,5 +99,14 @@
         <p>C/ Company 19</p>
       </article>
       </footer>
+      <script>
+  function toggleTable() {
+    const table = document.getElementById('specsTable');
+    const btn = document.getElementById('toggleSpecs');
+    const isCollapsed = table.classList.toggle('collapsed');
+    btn.classList.toggle('collapsed', isCollapsed);
+    btn.setAttribute('aria-expanded', !isCollapsed);
+  }
+</script>
   </body>
 </html>
