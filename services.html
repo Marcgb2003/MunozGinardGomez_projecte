@@ -30,6 +30,7 @@
         <a href="login.html" class="navbutton">
           <img src="imgs/login.png" alt="login" class="login"/>
         </a>
+        <button id="themeToggle" onclick="toggleTheme()" aria-label="Cambiar tema">🌙</button>
       </article>
     </nav>
     <main>
@@ -86,4 +87,13 @@
       </article>
       </footer>
   </body>
+  <script>
+    function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const newTheme = isDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+}
+  </script>
 </html>

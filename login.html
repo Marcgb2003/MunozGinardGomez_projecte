@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Mumez guitars" />
-    <meta
-      name="description"
-      content="Mumez, unos luthiers especializados en complacerte."
-    />
-    <title>Mumez guitars</title>
-    <!-- Link to CSS file (optional) -->
-    <link rel="stylesheet" href="css/login.css" />
-        <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="topbar">
-      <article class="logo">
-        <a href="index.html">
-          <img src="imgs/logo.png" alt="Logo" />
-        </a>
-      </article>
-      <article class="nav-links">
-        <a href="index.html" class="navbutton">Inicio</a>
-        <a href="aboutus.html" class="navbutton">Nosotros</a>
-        <a href="services.html" class="navbutton">Servicios</a>
-        <a href="products.html" class="navbutton">Productos</a>
-        <a href="login.html" class="navbutton">
-          <img src="imgs/login.png" alt="login" class="login"/>
-        </a>
-      </article>
-    </nav>
 
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Mumez guitars" />
+  <meta name="description" content="Mumez, unos luthiers especializados en complacerte." />
+  <title>Mumez guitars</title>
+  <!-- Link to CSS file (optional) -->
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="topbar">
+    <article class="logo">
+      <a href="index.html">
+        <img src="imgs/logo.png" alt="Logo" />
+      </a>
+    </article>
+    <article class="nav-links">
+      <a href="index.html" class="navbutton">Inicio</a>
+      <a href="aboutus.html" class="navbutton">Nosotros</a>
+      <a href="services.html" class="navbutton">Servicios</a>
+      <a href="products.html" class="navbutton">Productos</a>
+      <a href="login.html" class="navbutton">
+        <img src="imgs/login.png" alt="login" class="login" />
+      </a>
+    </article>
+    <button id="themeToggle" onclick="toggleTheme()" aria-label="Cambiar tema">🌙</button>
+  </nav>
+
+  <main>
     <form action="" method="post">
-        <label for="username">Nom d'usuari:</label>
-        <input id="username" type="text" name = "Nom d'usuari" pattern="^[A-Za-z0-9_\-]{4,15}$">
-                <label for="password">Contrassenya:</label>
-        <input id="password" type="password" name = "Contrassenya" pattern="^(?=.*[_\-.:,;!·$%&/()=\?¿\\|@#~])[A-Za-z0-9^A-Za-z0-9]{4,30}$">
-<<<<<<< HEAD
-        <button type="submit">Log in</button>
-=======
-        <button type="submit">Iniciar sessió</button>
->>>>>>> 36a16d9128e87c9ee4c4d3021d4e91915ce28dc5
+      <label for="username">Nom d'usuari:</label>
+      <input id="username" type="text" name="Nom d'usuari" pattern="^[A-Za-z0-9_\-]{4,15}$">
+      <label for="password">Contrassenya:</label>
+      <input id="password" type="password" name="Contrassenya"
+        pattern="^(?=.*[_\-.:,;!·$%&/()=\?¿\\|@#~])[A-Za-z0-9^A-Za-z0-9]{4,30}$">
+      <button type="submit">Iniciar sessió</button>
     </form>
-    </main>
+  </main>
 
-    <footer class="footer">
-      <article class="footer-section">
-        <h4>Les nostres Socials</h4>
-        <a href="youtube.com" target="_blank">Youtube</a>
-        <a href="instagram.com" target="_blank">Instagram</a>
-        <a href="facebook.com" target="_blank">FaceBook</a>
-        <a href="x.com" target="_blank">X</a>
-      </article>
+  <footer class="footer">
+    <article class="footer-section">
+      <h4>Les nostres Socials</h4>
+      <a href="youtube.com" target="_blank">Youtube</a>
+      <a href="instagram.com" target="_blank">Instagram</a>
+      <a href="facebook.com" target="_blank">FaceBook</a>
+      <a href="x.com" target="_blank">X</a>
+    </article>
 
-      <article class="footer-section">
-        <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuestro correo</a>
-        <p>Telefono: 601126557</p>
-        <h4>Dirección</h4>
-        <p>C/ Company 19</p>
-      </article>
-      </footer>
-  </body>
+    <article class="footer-section">
+      <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuestro correo</a>
+      <p>Telefono: 601126557</p>
+      <h4>Dirección</h4>
+      <p>C/ Company 19</p>
+    </article>
+  </footer>
+</body>
+<script>
+  function toggleTheme() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+  }
+</script>
+
 </html>

@@ -28,7 +28,8 @@
         <a href="login.html" class="navbutton">
           <img src="imgs/login.png" alt="login" class="login"/>
         </a>
-      </article>
+              <button id="themeToggle" onclick="toggleTheme()" aria-label="Cambiar tema">🌙</button>
+</article>
     </nav>
     <main>
       <article class="guitarDescription">
@@ -104,6 +105,13 @@
     btn.classList.toggle('collapsed', isCollapsed);
     btn.setAttribute('aria-expanded', !isCollapsed);
   }
-</script>
+    function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const newTheme = isDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+}
+  </script>
   </body>
 </html>

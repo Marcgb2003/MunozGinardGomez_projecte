@@ -10,7 +10,9 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #000;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* NAVBAR */
@@ -135,4 +137,39 @@ body {
   }
 }
 
+/* Light Mode */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --nav-bg: rgb(43, 43, 43);
+  --footer-bg: rgb(29, 29, 29);
+  --btn-bg: rgb(136, 136, 136);
+  --btn-hover: rgb(180, 180, 180);
+}
 
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #eeeeee;
+  --nav-bg: rgb(15, 15, 15);
+  --footer-bg: rgb(10, 10, 10);
+  --btn-bg: rgb(80, 80, 80);
+  --btn-hover: rgb(120, 120, 120);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Mode button */
+#modeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5vw;
+  margin-left: auto;
+  line-height: 1;
+}
