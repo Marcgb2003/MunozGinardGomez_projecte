@@ -13,6 +13,8 @@
   border-radius: 0.5vw;
   display: block;
   margin: 0 auto;
+  border: 3px solid transparent;
+
 }
 
 .product figcaption {

@@ -66,6 +66,21 @@ body {
   height: auto;
 }
 
+#themeToggle{
+  flex: 1;
+  background-color: rgb(136, 136, 136);
+  border-radius: 0.5vw;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  color: white;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 /* FOOTER */
 .footer {
   display: flex;
