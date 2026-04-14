@@ -63,3 +63,24 @@ En el mensaje hemos puesto que, como tiene que ser un nombre completo, tiene que
 ### Reparto de tareas
 
 Marc se ha encargado del HTML, mientras que Rúben ha puesto sus habilidades con el CSS y el diseño a buen uso y Sergi ha explicado el trabajo anteriormente mencionado en el README y ha ayudado en las decisiones de seguridad.
+
+## Implementación de Javascript
+
+### Modo claro/modo oscuro
+
+Hemos implementado un botón en todos los headers que, al clickarse, invoca la función toggleTheme que revisa en el documento el valor de data-theme, si es dark da true, y si no da false. Luego usando ese booleano decide el nuevo tema, es decir, si el tema es dark, lo pone a light y viceversa. Después de eso aplica el nuevo tema, cambia el botón al botón del tema correspondiente y luego guarda el valor en localStorage para que al recargar la página se mantenga. Luego en el css hemos creado un check que si data-theme es dark, carga los valores de color del tema oscuro y si no lo deja con los colores básicos.
+
+### Efectos del ratón
+
+
+### Mostrar/Ocultar una tabla
+
+Hemos creado la función toggleTable que coge la tabla que creamos y el botón que llama a su misma función y revisa el valor de collapsed de la tabla. Si la tabla está ya escondida lo añade al botón y a su vez pone un atributo llamado aria-expanded al botón para que los lectores de pantalla puedan saber si la tabla está escondida o no. Luego en el css, si el atributo collapsed de la tabla es true la vuelve invisible y si button tiene el atributo collapsed, lo gira 180 grados.
+
+### Validación de datos
+
+He creado una función que añade un eventListener al botón de submit, y que, cuando es pulsado, comprueba que los campos estén llenos y, si no para el envío de la información y saca un mensage de error.
+
+### Creación del muro de comentarios
+
+Hemos creado un artículo que hará de muro y zona de post de comentarios

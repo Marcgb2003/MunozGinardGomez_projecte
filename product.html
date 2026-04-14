@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Mumez guitars" />
-    <title>Producto</title>
-    <meta
-      name="description"
-      content="Mumez, unos luthiers especializados en complacerte."
-    />
-    <!-- Link to CSS file (optional) -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/product.css" />
-  </head>
-  <body>
-    <nav class="topbar">
-      <article class="logo">
-        <a href="index.html">
-          <img src="imgs/logo.png" alt="Logo" />
-        </a>
-      </article>
-      <article class="nav-links">
-        <a href="index.html" class="navbutton">Inicio</a>
-        <a href="aboutus.html" class="navbutton">Nosotros</a>
-        <a href="services.html" class="navbutton">Servicios</a>
-        <a href="products.html" class="navbutton">Productos</a>
-        <a href="login.html" class="navbutton">
-          <img src="imgs/login.png" alt="login" class="login"/>
-        </a>
-              <button id="themeToggle" onclick="toggleTheme()" aria-label="Cambiar tema">🌙</button>
-</article>
-    </nav>
-    <main>
-      <article class="guitarDescription">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Mumez guitars" />
+  <title>Producto</title>
+  <meta name="description" content="Mumez, unos luthiers especializados en complacerte." />
+  <!-- Link to CSS file (optional) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/product.css" />
+</head>
+
+<body>
+  <nav class="topbar">
+    <article class="logo">
+      <a href="index.html">
+        <img src="imgs/logo.png" alt="Logo" />
+      </a>
+    </article>
+    <article class="nav-links">
+      <a href="index.html" class="navbutton">Inicio</a>
+      <a href="aboutus.html" class="navbutton">Nosotros</a>
+      <a href="services.html" class="navbutton">Servicios</a>
+      <a href="products.html" class="navbutton">Productos</a>
+      <a href="login.html" class="navbutton">
+        <img src="imgs/login.png" alt="login" class="login" />
+      </a>
+      <button id="themeToggle" onclick="toggleTheme()" aria-label="Cambiar tema">🌙</button>
+    </article>
+  </nav>
+  <main>
+    <article class="guitarDescription">
       <article class="carousel">
         <article class="track">
           <img src="imgs/placeholder.jpg" alt="Guitar Full Front">
@@ -43,75 +42,137 @@
       <figcaption>
         <h1>Nombre de la guitarra</h1>
         <p> Creado por Nombre del diseñador (Either Ruben o Marc)</p>
-    </figcaption>
-      <p>Esta descripción es un placeholder usado para que, en cuanto tengamos las guitarras diseñadas y preparadas para ponerlas, se sustituya. Lorem Ipsum Dolor sic amet, nucoare traendam hurale hispena. </br> La tguitara es yada yada yada necesito madera, estoy en un prototipo hasta que tengamos el diseño</p>
-      </article>
-      <article class="guitarSpecs">
-  <h3>
-    Tabla de especificaciones
-    <button id="toggleSpecs" onclick="toggleTable()" aria-expanded="true" aria-controls="specsTable">
-      ▲
-    </button>
-  </h3>
-  <table id="specsTable">
-    <tr>
-      <td>Madera del mástil</td>
-      <td>NA</td>
-    </tr>
-    <tr>
-      <td>Madera del cuerpo</td>
-      <td>NA</td>
-    </tr>
-    <tr>
-      <td>Pastillas</td>
-      <td>NA</td>
-    </tr>
-    <tr>
-      <td>Electrónica</td>
-      <td>NA</td>
-    </tr>
-    <tr>
-      <td>Puente</td>
-      <td>NA</td>
-    </tr>
-    <tr>
-      <td>Escala</td>
-      <td>NA</td>
-    </tr>
-  </table>
-</article>
-    </main>
-    <footer class="footer">
-      <article class="footer-section">
-        <h4>Les nostres Socials</h4>
-        <a href="youtube.com" target="_blank">Youtube</a>
-        <a href="instagram.com" target="_blank">Instagram</a>
-        <a href="facebook.com" target="_blank">FaceBook</a>
-        <a href="x.com" target="_blank">X</a>
-      </article>
+      </figcaption>
+      <p>Esta descripción es un placeholder usado para que, en cuanto tengamos las guitarras diseñadas y preparadas para
+        ponerlas, se sustituya. Lorem Ipsum Dolor sic amet, nucoare traendam hurale hispena. </br> La tguitara es yada
+        yada yada necesito madera, estoy en un prototipo hasta que tengamos el diseño</p>
+    </article>
+    <article class="guitarSpecs">
+      <h3>
+        Tabla de especificaciones
+        <button id="toggleSpecs" onclick="toggleTable()" aria-expanded="true" aria-controls="specsTable">
+          ▲
+        </button>
+      </h3>
+      <table id="specsTable">
+        <tr>
+          <td>Madera del mástil</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>Madera del cuerpo</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>Pastillas</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>Electrónica</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>Puente</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>Escala</td>
+          <td>NA</td>
+        </tr>
+      </table>
+    </article>
+    <article class="comentarios">
+      <h3>Comentarios</h3>
+      <div class="comentario-form">
+        <input id="nombreInput" type="text" placeholder="Tu nombre">
+        <textarea id="comentarioInput" placeholder="Escribe un comentario..."></textarea>
+        <button onclick="añadirComentario()">Publicar</button>
+        <p id="errorComentario" style="color:red; display:none;">Por favor, rellena todos los campos.</p>
+      </div>
+      <div id="muroComentarios"></div>
+    </article>
+  </main>
+  <footer class="footer">
+    <article class="footer-section">
+      <h4>Les nostres Socials</h4>
+      <a href="youtube.com" target="_blank">Youtube</a>
+      <a href="instagram.com" target="_blank">Instagram</a>
+      <a href="facebook.com" target="_blank">FaceBook</a>
+      <a href="x.com" target="_blank">X</a>
+    </article>
 
-      <article class="footer-section">
-        <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuestro correo</a>
-        <p>Telefono: 601126557</p>
-        <h4>Dirección</h4>
-        <p>C/ Company 19</p>
-      </article>
-      </footer>
-      <script>
-  function toggleTable() {
-    const table = document.getElementById('specsTable');
-    const btn = document.getElementById('toggleSpecs');
-    const isCollapsed = table.classList.toggle('collapsed');
-    btn.classList.toggle('collapsed', isCollapsed);
-    btn.setAttribute('aria-expanded', !isCollapsed);
-  }
+    <article class="footer-section">
+      <a href="mailto:marc.elintrepido@gmail.com" target="_blank">Nuestro correo</a>
+      <p>Telefono: 601126557</p>
+      <h4>Dirección</h4>
+      <p>C/ Company 19</p>
+    </article>
+  </footer>
+  <script>
+    function toggleTable() {
+      const table = document.getElementById('specsTable');
+      const btn = document.getElementById('toggleSpecs');
+      const isCollapsed = table.classList.toggle('collapsed');
+      btn.classList.toggle('collapsed', isCollapsed);
+      btn.setAttribute('aria-expanded', !isCollapsed);
+    }
+
     function toggleTheme() {
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  const newTheme = isDark ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
-}
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const newTheme = isDark ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+    }
+
+    function añadirComentario() {
+      const nombre = document.getElementById('nombreInput').value.trim();
+      const texto = document.getElementById('comentarioInput').value.trim();
+      const error = document.getElementById('errorComentario');
+
+      if (nombre === '' || texto === '') {
+        error.style.display = 'block';
+        return;
+      }
+
+      error.style.display = 'none';
+
+      const comentario = {
+        nombre: nombre,
+        texto: texto,
+        fecha: new Date().toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+      };
+
+      const comentarios = JSON.parse(localStorage.getItem('comentarios') || '[]');
+      comentarios.push(comentario);
+      localStorage.setItem('comentarios', JSON.stringify(comentarios));
+
+      document.getElementById('nombreInput').value = '';
+      document.getElementById('comentarioInput').value = '';
+
+      renderizarComentarios();
+    }
+
+    function renderizarComentarios() {
+      const muro = document.getElementById('muroCometarios');
+      const comentarios = JSON.parse(localStorage.getItem('comentarios') || '[]');
+
+      if (comentarios.length === 0) {
+        muro.innerHTML = '<p class="sin-comentarios">Sé el primero en comentar.</p>';
+        return;
+      }
+
+      muro.innerHTML = comentarios.reverse().map(c => `
+    <div class="comentario">
+      <span class="comentario-nombre">${c.nombre}</span>
+      <span class="comentario-fecha">${c.fecha}</span>
+      <p class="comentario-texto">${c.texto}</p>
+    </div>
+  `).join('');
+    }
+
+    renderizarComentarios();
   </script>
-  </body>
+</body>
+
 </html>
