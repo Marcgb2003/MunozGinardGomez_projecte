@@ -49,3 +49,65 @@
 #toggleSpecs.collapsed {
   transform: rotate(180deg);
 }
+
+.comentarios {
+  padding: 2rem;
+}
+
+.comentario-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.comentario-form input,
+.comentario-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.comentario-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.comentario-form button {
+  align-self: flex-start;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comentario {
+  border-top: 1px solid #ccc;
+  padding: 1rem 0;
+  max-width: 600px;
+}
+
+.comentario-nombre {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.comentario-fecha {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.comentario-texto {
+  margin-top: 0.4rem;
+}
+
+.sin-comentarios {
+  color: gray;
+  font-style: italic;
+}

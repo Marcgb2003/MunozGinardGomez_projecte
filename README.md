@@ -73,6 +73,7 @@ Hemos implementado un botón en todos los headers que, al clickarse, invoca la f
 ### Efectos del ratón
 
 
+
 ### Mostrar/Ocultar una tabla
 
 Hemos creado la función toggleTable que coge la tabla que creamos y el botón que llama a su misma función y revisa el valor de collapsed de la tabla. Si la tabla está ya escondida lo añade al botón y a su vez pone un atributo llamado aria-expanded al botón para que los lectores de pantalla puedan saber si la tabla está escondida o no. Luego en el css, si el atributo collapsed de la tabla es true la vuelve invisible y si button tiene el atributo collapsed, lo gira 180 grados.
@@ -83,4 +84,4 @@ He creado una función que añade un eventListener al botón de submit, y que, c
 
 ### Creación del muro de comentarios
 
-Hemos creado un artículo que hará de muro y zona de post de comentarios
+Hemos creado un artículo que hará de muro y zona de post de comentarios en el que tú pones tu nombre y tu comentario y lo publicas, pero salta un error si no has puesto alguno de los dos. El botón de publicar llama a la función añadirComentario, que primero chequea si falta alguno de los dos y, si es así, salta el error, pero si no crea un objeto comentario con el nombre, el texto y la fecha de publicación. Acto seguido coge el objeto comentarios de localStorage y lo pasa a array. Después añade el comentario y guarda de nuevo el array en localstorage. A continuación vacía los inputs y llama a la función renderizarComentarios, que carga en el programa el div muro que hemos creado y recorre el objeto en órden inverso, crea un div de clase comentario que contiene el nombre, la fecha y el texto y lo añade al muro. Esta función también se llama la primera vez que cargas la página.
